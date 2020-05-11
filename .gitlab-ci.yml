@@ -1,0 +1,55 @@
+image: registry.gitlab.com/kolanich-subgroups/docker-images/fixed_python:latest
+
+variables:
+  DOCKER_DRIVER: overlay2
+  SAST_ANALYZER_IMAGE_TAG: latest
+  SAST_DISABLE_DIND: "true"
+  SAST_CONFIDENCE_LEVEL: 5
+  CODECLIMATE_VERSION: latest
+
+include:
+  - template: SAST.gitlab-ci.yml
+  - template: Code-Quality.gitlab-ci.yml
+
+.build:
+  tags:
+    - shared
+    - linux
+  stage: build
+  interruptible: true
+  variables:
+    GIT_DEPTH: "1"
+    PYTHONUSERBASE: ${CI_PROJECT_DIR}/python_user_packages
+
+  before_script:
+    - export PATH="$PATH:$PYTHONUSERBASE/bin" # don't move into `variables`
+    #- git clone --depth=1 --filter=sparse:path=src/python https://github.com/waxeye-org/waxeye.git
+    - git clone --depth=1 https://github.com/waxeye-org/waxeye.git
+    - cd ./waxeye/src/python
+    - python3 ./setup.py  bdist_wheel
+    - pip3 install --upgrade ./dist/*.whl
+    - cd ../../../
+
+  cache:
+    paths:
+      - /usr/local/site-packages
+      - /usr/local/lib/python*/site-packages
+
+  script:
+    - python3 setup.py bdist_wheel
+    - pip3 install --user --upgrade ./dist/*.whl
+    - cd ./tests
+    #- coverage run -a --branch --source=UniGrammar -m pytest --junitxml=./rspec.xml --forked ./test*.py
+    #- coverage report -m || true
+    #- coveralls || true
+    #- codecov || true
+    #- cd ..
+    - mkdir wheels
+    - mv ./dist/*.whl ./wheels/AptSourcesList-0.CI-py3-none-any.whl
+
+  artifacts:
+    paths:
+      - wheels
+      - $PYTHONUSERBASE
+    reports:
+      junit: ./rspec.xml

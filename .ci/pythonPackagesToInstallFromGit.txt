@@ -1,0 +1,9 @@
+https://github.com/gruns/icecream.git
+https://github.com/tomerfiliba/plumbum.git
+https://github.com/KOLANICH-libs/rangeslicetools.py.git
+https://github.com/UniGrammar/charRanges.py.git
+https://github.com/UniGrammar/escapelib.py.git
+https://github.com/KOLANICH-libs/urm.py.git
+https://github.com/UniGrammar/UniGrammarRuntimeCore.py.git
+https://github.com/UniGrammar/UniGrammarRuntime.py.git
+https://github.com/KOLANICH-libs/transformerz.py.git

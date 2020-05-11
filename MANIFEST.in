@@ -1,0 +1,6 @@
+include UNLICENSE
+include *.md
+include tests
+global-include .editorconfig
+global-include *.pgt
+global-include *.pglr

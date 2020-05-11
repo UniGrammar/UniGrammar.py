@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5.5345mm" height="7.0754mm" version="1.1" viewBox="0 0 5.5345 7.0754" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <title>UniGrammar logo</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="https://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>UniGrammar logo</dc:title>
+    <cc:license rdf:resource="https://scripts.sil.org/OFL"/>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>KOLANICH</dc:title>
+     </cc:Agent>
+    </dc:creator>
+    <dc:description>Built from glyphs of PT Astra Sans Font, whish is licensed under SIL OFL, with some modifications</dc:description>
+    <dc:language>English</dc:language>
+    <dc:subject>
+     <rdf:Bag>
+      <rdf:li>Unigrammar</rdf:li>
+     </rdf:Bag>
+    </dc:subject>
+   </cc:Work>
+   <cc:License rdf:about="https://scripts.sil.org/OFL">
+    <cc:permits rdf:resource="https://scripts.sil.org/pub/OFL/Reproduction"/>
+    <cc:permits rdf:resource="https://scripts.sil.org/pub/OFL/Distribution"/>
+    <cc:permits rdf:resource="https://scripts.sil.org/pub/OFL/Embedding"/>
+    <cc:permits rdf:resource="https://scripts.sil.org/pub/OFL/DerivativeWorks"/>
+    <cc:requires rdf:resource="https://scripts.sil.org/pub/OFL/Notice"/>
+    <cc:requires rdf:resource="https://scripts.sil.org/pub/OFL/Attribution"/>
+    <cc:requires rdf:resource="https://scripts.sil.org/pub/OFL/ShareAlike"/>
+    <cc:requires rdf:resource="https://scripts.sil.org/pub/OFL/DerivativeRenaming"/>
+    <cc:requires rdf:resource="https://scripts.sil.org/pub/OFL/BundlingWhenSelling"/>
+   </cc:License>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-40.364 -41.107)">
+  <path d="m45.553 44.927-2.2682-0.0042 3.3e-5 -0.84664h2.28" fill="#f00"/>
+  <path d="m44.958 43.116 0.94051-0.29765v2.8417c0 0.43064-0.06718 0.80443-0.20154 1.1214-0.13436 0.31695-0.3204 0.57878-0.5581 0.78548-0.23771 0.20671-0.51849 0.36174-0.84233 0.46509-0.32384 0.09991-0.67352 0.14986-1.049 0.14986-0.45131 0-0.85611-0.04823-1.2144-0.14469-0.35484-0.09991-0.65629-0.24632-0.90434-0.43925s-0.43753-0.43408-0.56844-0.72347c-0.13091-0.29283-0.19637-0.63045-0.19637-1.0129l0.0087-3.074 1.0175 1.0867-0.02363 1.6049c-0.0048 0.3238 0.0379 0.60117 0.11369 0.83199 0.07924 0.23082 0.19637 0.4203 0.3514 0.56844 0.15503 0.14469 0.34968 0.25149 0.58394 0.32039s0.50815 0.10335 0.82166 0.10335c0.5581 0 0.98357-0.14642 1.2764-0.43925 0.29628-0.29283 0.44442-0.76481 0.44442-1.4159l-2e-6 -0.52637 0.59764-0.42059-0.59765-0.41805z" fill="#000080"/>
+  <path d="m40.369 42.805c0.01386-0.65644 0.36592-0.90852 0.90577-1.2369 0.62896-0.28405 1.3415-0.46136 2.167-0.46136 0.42333 0 0.82197 0.03881 1.1959 0.11642 0.381 0.07761 0.35344 0.08775 0.67796 0.22886l0.07922 0.40034 0.1091 0.58234c-0.31446-0.096597-0.73932-0.28021-1.078-0.36487-0.33161-0.08467-0.67733-0.13286-1.0372-0.13286-0.54254 0-0.94663 0.03044-1.5913 0.39224-0.14064 0.08809-0.0957 0.04021-0.275 0.24725-0.15117 0.17456-0.134 0.98347-0.13226 1.2974" fill="#008000"/>
+ </g>
+</svg>

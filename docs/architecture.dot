@@ -1,0 +1,48 @@
+digraph {
+
+	subgraph Transpilation {
+		YUG[label="YUG file",shape=note];
+		UGAST[label="UniGrammar AST",shape=diamond];
+		B[label="Backend",shape=diamond];
+
+		YUG -> UGAST [style=dashed];
+		UGAST -> B;
+		B -> Tr [style=dashed];
+	};
+
+	subgraph Compilation {
+		IR[label="internal repr",tooltip="(may be\ntranspiled text if\nthe parser generator has no precompilation)",shape=diamond];
+
+		PFs[label="IParserFactoryFromSource",shape=box3d];
+
+		R[label="Runner",shape="octagon"];
+
+		Co[label="compiled grammar",shape=note];
+
+		Tr[label="transpiled grammar",shape=note];
+		C[label="ICompiler",shape=triangle];
+
+
+		PFp[label="IParserFactoryFromPrecompiled",shape=box3d];
+
+
+		P[label="IParser",shape=circle];
+		S[label="File to parse",shape=box];
+		AST[label="AST",shape=parallelogram];
+
+		Tr -> C -> IR -> R ->  Co;
+
+		Tr -> PFs -> P;
+		Co -> PFp -> P;
+	};
+
+	subgraph Parsing {
+		S -> P -> AST [style=dashed];
+	};
+
+	subgraph Testing {
+		TFs[label="Files with tests"];
+		UGAST -> TFs [style=dashed];
+		TFs -> S;
+	};
+}

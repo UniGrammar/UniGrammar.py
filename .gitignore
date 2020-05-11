@@ -1,0 +1,14 @@
+__pycache__
+*.pyc
+*.pyo
+*.pgt
+*.dot
+/UniGrammar.egg-info
+/build
+/dist
+/.eggs
+/tests/grammars
+monkeytype.sqlite3
+*.srctrlprj
+*.srctrldb
+*.srctrlbm

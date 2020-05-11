@@ -1,0 +1,1 @@
+deb [signed-by=/etc/apt/trusted.gpg.d/ubuntu-keyring-2018-archive.gpg,trusted=true] https://mirrors.kernel.org/ubuntu/ eoan main restricted
