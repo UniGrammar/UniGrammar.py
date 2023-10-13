@@ -5,6 +5,8 @@ import warnings
 from copy import deepcopy
 from pathlib import Path
 
+warnings.warn("We have moved from M$ GitHub to https://codeberg.org/UniGrammar/UniGrammar.py , read why on https://codeberg.org/KOLANICH/Fuck-GuanTEEnomo .")
+
 from .core.ast import Grammar
 from .core.backend.Generator import Generator, TranspiledResult
 from .ownGrammarFormat import parseUniGrammarFile
